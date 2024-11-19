@@ -44,5 +44,5 @@ vim.opt.undofile = true
 vim.opt.undodir = vim.fn.stdpath("data") .. "/undodir"
 
 if vim.uv.os_uname().sysname == "Windows_NT" then
-	vim.g.undoDiffCommand = "FC"
+	vim.g.undotree_DiffCommand = "FC"
 end

@@ -1,0 +1,13 @@
+general.import = ["themes/rose-pine.toml"]
+
+[terminal]
+shell = "nu"
+
+[font]
+normal = {family = "JetBrainsMono Nerd Font", style = "SemiBold"}
+
+[selection]
+save_to_clipboard=true
+
+[cursor]
+style = {shape="Block",blinking="Always"}
