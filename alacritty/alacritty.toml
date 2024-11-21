@@ -14,3 +14,9 @@ save_to_clipboard=true
 
 [cursor]
 style = {shape="Block",blinking="Always"}
+
+[keyboard]
+bindings =[
+{key = "Space", mods = "Control", action = "ToggleViMode"},
+{key = "N", mods = "Control|Shift", action = "CreateNewWindow"}
+]
