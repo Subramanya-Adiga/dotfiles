@@ -9,24 +9,29 @@ return {
 	cmd = "Neotree",
 	keys = {
 		{ "\\", ":Neotree position=current<CR>", desc = "NeoTree Reveal", silent = true },
+		{ "<leader>gf", ":Neotree git_status<CR>", desc = "NeoTree Git Status", silent = true },
 	},
 	opts = {
-		enable_git_status = true,
 		default_component_configs = {
-			type = {
-				enabled = true,
-				required_width = 122,
-			},
-			last_modified = {
-				enabled = true,
-				required_width = 80,
+			indent = {
+				with_expanders = true,
 			},
 		},
 		filesystem = {
+			filtered_items = {
+				hide_dotfiles = false,
+				hide_gitignored = false,
+				hide_hidden = false,
+			},
 			window = {
 				mappings = {
 					["\\"] = "close_window",
 				},
+			},
+		},
+		git_status = {
+			window = {
+				position = "float",
 			},
 		},
 	},
