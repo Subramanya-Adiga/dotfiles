@@ -5,7 +5,7 @@ vim.g.mapleaderlocal = " "
 vim.opt.showmode = false
 
 vim.g.have_nerd_font = true
-
+vim.opt.termguicolors = true
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
