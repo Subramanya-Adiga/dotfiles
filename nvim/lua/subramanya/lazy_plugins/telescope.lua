@@ -1,5 +1,6 @@
 return {
 	"nvim-telescope/telescope.nvim",
+	event = "VimEnter",
 	version = "0.1.x",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
@@ -32,7 +33,6 @@ return {
 
 		local builtin = require("telescope.builtin")
 		vim.keymap.set("n", "<leader>sf", builtin.find_files, { desc = "[S]earch [F]iles" })
-		vim.keymap.set("n", "<C-p>", builtin.git_files, {})
 		vim.keymap.set("n", "<leader>sh", builtin.help_tags, { desc = "[S]earch [H]elp" })
 		vim.keymap.set("n", "<leader>sk", builtin.keymaps, { desc = "[S]earch [K]eymaps" })
 		vim.keymap.set("n", "<leader>ss", builtin.builtin, { desc = "[S]earch [S]elect Telescope" })
@@ -42,6 +42,14 @@ return {
 		vim.keymap.set("n", "<leader>sr", builtin.resume, { desc = "[S]earch [R]esume" })
 		vim.keymap.set("n", "<leader>s.", builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
 		vim.keymap.set("n", "<leader><leader>", builtin.buffers, { desc = "[ ] Find existing buffers" })
+
+		vim.keymap.set("n", "<leader>cs", builtin.colorscheme, { desc = "List Installed [c]olor[s]cheme" })
+
+		--Git Related Keymaps
+		vim.keymap.set("n", "<C-p>", builtin.git_files, { desc = "Search Git Files" })
+		vim.keymap.set("n", "<leader>gb", builtin.git_branches, { desc = "List [g]it [b]ranch" })
+		vim.keymap.set("n", "<leader>gs", builtin.git_status, { desc = "[g]it [s]tatus" })
+		-- vim.keymap.set("n", "<leader>gc", builtin.git_commit, {})
 
 		vim.keymap.set("n", "<leader>/", function()
 			builtin.current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({

@@ -9,7 +9,7 @@ return {
 	cmd = "Neotree",
 	keys = {
 		{ "\\", ":Neotree position=current<CR>", desc = "NeoTree Reveal", silent = true },
-		{ "<leader>gf", ":Neotree git_status<CR>", desc = "NeoTree Git Status", silent = true },
+		-- { "<leader>gs", ":Neotree git_status<CR>", desc = "NeoTree Git Status", silent = true },
 	},
 	opts = {
 		default_component_configs = {
