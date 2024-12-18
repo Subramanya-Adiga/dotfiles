@@ -1,8 +1,8 @@
 function ColorMyPenciles(color)
 	color = color or "rose-pine"
 	vim.cmd.colorscheme(color)
-	--    vim.api.nvim_set_hl(0,"Normal",{bg="none"})
-	--    vim.api.nvim_set_hl(0,"NormalFloat",{bg="none"})
+	-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+	-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
 return {
@@ -12,7 +12,7 @@ return {
 			local configs = require("tokyonight")
 			configs.setup({
 				style = "storm",
-				--				transparent = true,
+				-- transparent = true,
 				terminal_colors = true,
 				styles = {
 					comments = { italic = false },
@@ -29,7 +29,7 @@ return {
 		config = function()
 			require("rose-pine").setup({
 				variant = "moon",
-				--               disable_background = true,
+				-- disable_background = true,
 				styles = {
 					italic = false,
 				},
