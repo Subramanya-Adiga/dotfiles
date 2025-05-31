@@ -1,8 +1,8 @@
 return {
 	"neovim/nvim-lspconfig",
 	dependencies = {
-		{ "williamboman/mason.nvim", config = true },
-		"williamboman/mason-lspconfig.nvim",
+		{ "williamboman/mason.nvim", version = "^1.0.0", config = true },
+		{ "williamboman/mason-lspconfig.nvim", version = "^1.0.0" },
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 
 		{ "j-hui/fidget.nvim", opts = {} },
@@ -121,7 +121,8 @@ return {
 				},
 			},
 			rust_analyzer = {},
-			-- cmake = {},
+			cmake = {},
+			hyprls = {},
 			-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
 			lua_ls = {
 				-- cmd = {...},
