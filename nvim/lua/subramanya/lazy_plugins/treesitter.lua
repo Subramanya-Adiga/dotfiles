@@ -28,6 +28,8 @@ return {
 			"make",
 			"slint",
 			"nu",
+			"hyprlang",
+			"powershell",
 		},
 		auto_install = true,
 		sync_install = false,
