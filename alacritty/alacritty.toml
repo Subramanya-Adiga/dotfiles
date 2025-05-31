@@ -3,6 +3,9 @@ general.import = ["themes/rose-pine.toml"]
 [terminal]
 shell = "nu"
 
+[window]
+opacity=0.8
+
 [font]
 normal = {family = "JetBrainsMono Nerd Font", style = "Medium"}
 bold = {family = "JetBrainsMono Nerd Font", style = "Bold"}
