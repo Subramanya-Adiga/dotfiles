@@ -1,6 +1,6 @@
 return {
 	{
-		"tpope/vim-sleuth",
+		"NMAC427/guess-indent.nvim",
 	},
 	{
 		"folke/todo-comments.nvim",
