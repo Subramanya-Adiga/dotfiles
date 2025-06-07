@@ -4,7 +4,7 @@ return {
 	version = "1.*",
 	dependencies = {
 		{
-			"L3EMON4D3/LuaSnip",
+			"L3MON4D3/LuaSnip",
 			version = "2.*",
 			build = (function()
 				if vim.fn.has("win32") == 1 or vim.fn.executable("make") == 0 then
