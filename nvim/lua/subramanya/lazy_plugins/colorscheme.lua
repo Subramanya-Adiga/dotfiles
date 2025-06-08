@@ -8,33 +8,38 @@ end
 return {
 	{
 		"folke/tokyonight.nvim",
-		config = function()
-			local configs = require("tokyonight")
-			configs.setup({
-				style = "storm",
-				-- transparent = true,
-				terminal_colors = true,
-				styles = {
-					comments = { italic = false },
-					keywords = { italic = false },
-					sidebars = "dark",
-					floats = "dark",
-				},
-			})
-		end,
+		opts = {
+			style = "storm",
+			-- transparent = false,
+			terminal_colors = true,
+			styles = {
+				comments = { italic = false },
+				keywords = { italic = false },
+				sidebars = "dark",
+				floats = "dark",
+			},
+		},
 	},
 	{
 		"rose-pine/neovim",
 		name = "rose-pine",
-		config = function()
-			require("rose-pine").setup({
-				variant = "moon",
-				-- disable_background = true,
-				styles = {
-					italic = false,
-				},
-			})
-			ColorMyPenciles()
-		end,
+		opts = {
+			variant = "moon",
+			styles = {
+				italic = false,
+			},
+		},
+	},
+	{
+		"rebelot/kanagawa.nvim",
+	},
+	{
+		"uloco/bluloco.nvim",
+		dependencies = {
+			"rktjmp/lush.nvim",
+		},
+	},
+	{
+		"rmehri01/onenord.nvim",
 	},
 }

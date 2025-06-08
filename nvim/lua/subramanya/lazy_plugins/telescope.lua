@@ -46,9 +46,9 @@ return {
 		vim.keymap.set("n", "<leader>cs", builtin.colorscheme, { desc = "List Installed [c]olor[s]cheme" })
 
 		--Git Related Keymaps
-		vim.keymap.set("n", "<C-p>", builtin.git_files, { desc = "Search Git Files" })
-		vim.keymap.set("n", "<leader>gb", builtin.git_branches, { desc = "List [g]it [b]ranch" })
-		vim.keymap.set("n", "<leader>gs", builtin.git_status, { desc = "[g]it [s]tatus" })
+		vim.keymap.set("n", "<C-p>", builtin.git_files, { desc = "Git: Search File" })
+		vim.keymap.set("n", "<leader>gb", builtin.git_branches, { desc = "Git: List Branches" })
+		vim.keymap.set("n", "<leader>gs", builtin.git_status, { desc = "Git: Status" })
 		-- vim.keymap.set("n", "<leader>gc", builtin.git_commit, {})
 
 		vim.keymap.set("n", "<leader>/", function()
